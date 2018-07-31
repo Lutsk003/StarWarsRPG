@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Star Wars RPG</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <header class="header">
+            <img id ="logo" src="assets/images/starwars_logo.jpg">
+            <div id ="rpg">Battle!</div>
+        </header>
+
+        <div id="game-end-container"></div>
+        <div id="game-end-text"></div>
+    
+        <div class="character-selection">
+            <img class ="character" id="Obi-Wan" src="assets/images/ObiWan.jpg">
+            <img class ="character" id="Luke" src="assets/images/Luke.jpg">
+            <img class ="character" id="Yoda" src="assets/images/Yoda.jpg">
+            <img class ="character" id="Darth-Vader" src="assets/images/DarthVader.jpg">
+
+        </div>
+
+        <!-- I originally wanted to turn the caracter portraits into animated sprites on the arena, but this proved to
+             be very time-consuming with my current level of knowledge. Might come back to it at a later date. -->
+
+
+        <div id="select-text">Choose your fighter!</div>
+
+        <div class="arena">
+            <img id="battle-area" src="assets/images/arena.jpg">
+            <div id="player-name"></div>
+            <div id="player-hp"></div>
+            <div id="player-total-hp"></div>
+            <div id="opponent-name"></div>
+            <div id="opponent-hp"></div>
+            <div id="opponent-total-hp"></div>
+            <div id="player-fight-area"></div>
+            <div id="opponent-fight-area"></div>
+        </div>
+
+        <button id="attack-button">Attack!</button>
+    
+    </div>
+    
+</body>
+</html>
