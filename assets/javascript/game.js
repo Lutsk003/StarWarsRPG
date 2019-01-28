@@ -50,8 +50,6 @@ $(document).ready(function() {
     gameStart = false;
     var enemiesLeft = players.length -1;
 
-    // Character Sounds (I wanted to add more sounds, but had to prioritize getting the game to work
-    // correctly first as it was taking longer than expected. Will add more sounds later for portfolio.)
     var lightsaberSound = new Audio ("assets/audio/lightsaber_clash.mp3");
     var obiWanSelect = new Audio ("assets/audio/#");
     var lukeSelect = new Audio ("assets/audio/#");
@@ -96,7 +94,7 @@ $(document).ready(function() {
                 player = luke;
                 $("#Luke").addClass("flipped");
                 //play sound
-                setTimeout(enemySelect, 1000 *2);
+                setTimeout(enemySelect, 1000 *1);
                     console.log("player one is " + playerOneSelected)
                 }
 
@@ -115,7 +113,7 @@ $(document).ready(function() {
                 player = yoda;
                 $("#Yoda").addClass("flipped");
                 //play sound
-                setTimeout(enemySelect, 1000 *2);
+                setTimeout(enemySelect, 1000 *1);
                     console.log("player one is " + playerOneSelected)
                 }
 
@@ -134,7 +132,7 @@ $(document).ready(function() {
                 player = darthVader;
                 $("#Darth-Vader").addClass("flipped");
                 //play sound
-                setTimeout(enemySelect, 1000 *2);
+                setTimeout(enemySelect, 1000 *1);
                     console.log("player one is " + playerOneSelected)
                 }
 
@@ -339,7 +337,7 @@ $(document).ready(function() {
         console.log("Congratulations, you win!")
         gameStart = false;
         victory.play();
-        setTimeout(gameReset, 1000 * 8);     
+        setTimeout(gameReset, 1000 * 3);     
     }
 
     function gameLose() {
@@ -347,7 +345,7 @@ $(document).ready(function() {
         gameStart = false;
         console.log("You lose :(");
         defeat.play();
-        setTimeout(gameReset, 1000 * 8);
+        setTimeout(gameReset, 1000 * 3);
     }
 
     function startBattle() {
